@@ -1,143 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/partials/header.css">
-    <link rel="stylesheet" href="/styles/partials/page-study.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/partials/header.css">
+        <link rel="stylesheet" href="./styles/partials/page-study.css">
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap">
 
-    <title>Proffy | Sua plataforma de estudos online</title>
-</head>
+        <title>Proffy | Sua plataforma de estudos online</title>
+    </head>
 
-<body id="page-study">
-    <div id="container">
-        <header class="page-header">
-            <div class="top-bar-container">
-                <a href="/"><img src="/images/icons/back.svg" alt="Back"></a>
-                <img src="/images/logo.svg" alt="Proffy">
-            </div>
+    <body id="page-study">
+        <div id="container">
+            <header class="page-header">
+                <div class="top-bar-container">
+                    <a href="/"><img src="./images/icons/back.svg" alt="Back"></a>
+                    <img src="./images/logo.svg" alt="Proffy">
+                </div>
 
-            <div class="header-content">
-                <strong>Estes são os proffys disponíveis.</strong>
+                <div class="header-content">
+                    <strong>Estes são os proffys disponíveis.</strong>
 
-                <form id="search-teachers" action="">
-                    <div class="select-block">
-                        <label for="subject">Matéria</label>
-                        <select name="subject" id="subject">
-                            <option value="" hidden="" disabled="">Selecione uma opção</option>
-                            <option value="1">Artes</option>
-                            <option value="2">Biologia</option>
-                            <option value="3">Ciências</option>
-                            <option value="4">Educação física</option>
-                            <option value="5">Física</option>
-                            <option value="6">Geografia</option>
-                            <option value="7">História</option>
-                            <option value="8">Matemática</option>
-                            <option value="9">Português</option>
-                            <option value="10">Química</option>
-                        </select>
-                    </div>
+                    <form id="search-teachers" action="">
+                        <div class="select-block">
+                            <label for="subject">Matéria</label>
+                            <select name="subject" id="subject">
+                                <option value="" hidden="" disabled="">Selecione uma opção</option>
+                                <option value="1">Artes</option>
+                                <option value="2">Biologia</option>
+                                <option value="3">Ciências</option>
+                                <option value="4">Educação física</option>
+                                <option value="5">Física</option>
+                                <option value="6">Geografia</option>
+                                <option value="7">História</option>
+                                <option value="8">Matemática</option>
+                                <option value="9">Português</option>
+                                <option value="10">Química</option>
+                            </select>
+                        </div>
 
-                    <div class="select-block">
-                        <label for="weekday">Dia da semana</label>
-                        <select name="weekday" id="weekday">
-                            <option value="0">Domingo</option>
-                            <option value="1">Segunda</option>
-                            <option value="2">Terça</option>
-                            <option value="3">Quarta</option>
-                            <option value="4">Quinta</option>
-                            <option value="5">Sexta</option>
-                            <option value="6">Sábado</option>
-                        </select>
-                    </div>
+                        <div class="select-block">
+                            <label for="weekday">Dia da semana</label>
+                            <select name="weekday" id="weekday">
+                                <option value="0">Domingo</option>
+                                <option value="1">Segunda</option>
+                                <option value="2">Terça</option>
+                                <option value="3">Quarta</option>
+                                <option value="4">Quinta</option>
+                                <option value="5">Sexta</option>
+                                <option value="6">Sábado</option>
+                            </select>
+                        </div>
 
-                    <div class="input-block">
-                        <label for="add-time">Horário</label>
-                        <input type="time" name="add-time" id=add-time>
-                    </div>
+                        <div class="input-block">
+                            <label for="add-time">Horário</label>
+                            <input type="time" name="add-time" id="add-time">
+                        </div>
 
-                    <button type="submit">Filtrar</button> <!-- Type=submit: envia os dados do forms-->
+                        <button type="submit">Filtrar</button>
+                        <!-- Type=submit: envia os dados do forms-->
 
-                </form>
+                    </form>
 
-            </div>
+                </div>
 
-        </header>
+            </header>
 
+            <main>
+                <article>
+                    <header>
+                        <img src="https://avatars2.githubusercontent.com/u/69776883?s=460&u=cce399541a47a5660a03087cdc524e3cd21a0203&v=4" alt="Photo profile">
+                        <div class="info-avatar">
+                            <strong>Gustavo Polonio</strong>
+                            <span>Química</span>
+                        </div>
+                    </header>
 
-        <main>
-            <article>
-                <header>
-                    <img src="https://avatars2.githubusercontent.com/u/69776883?s=460&u=cce399541a47a5660a03087cdc524e3cd21a0203&v=4"
-                        alt="Photo profile">
-                    <div class="info-avatar">
-                        <strong>Gustavo Polonio</strong>
-                        <span>Química</span>
-                    </div>
-                </header>
+                    <p class="text">Entusiasta das melhores tecnologias de química avançada.
+                        <br>
+                        <br>
+                        Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma de minhas explosões.
+                    </p>
 
-                <p class="text">Entusiasta das melhores tecnologias de química avançada. <br> <br> Apaixonado por
-                    explodir
-                    coisas
-                    em
-                    laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já
-                    passaram por uma de minhas explosões.
-                </p>
+                    <footer>
+                        <div class="value">
+                            <p>Preço/hora</p>
+                            <strong>R$ 20,00</strong>
+                        </div>
+                        <a href="https://api.whatsapp.com/send?phone=5511012345678"><img src="./images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato</a>
+                    </footer>
 
-                <footer>
-                    <div class="value">
-                        <p>Preço/hora</p>
-                        <strong>R$ 20,00</strong>
-                    </div>
-                    <a href="https://api.whatsapp.com/send?phone=5511012345678"><img src="/images/icons/whatsapp.svg"
-                            alt="Whatsapp">Entrar em contato</a>
-                </footer>
+                </article>
 
+                <article>
+                    <header>
+                        <img src="https://avatars2.githubusercontent.com/u/69776883?s=460&u=cce399541a47a5660a03087cdc524e3cd21a0203&v=4" alt="Photo profile">
+                        <div class="info-avatar">
+                            <strong>Gustavo Polonio</strong>
+                            <span>Química</span>
+                        </div>
+                    </header>
 
-            </article>
+                    <p class="text">Entusiasta das melhores tecnologias de química avançada.
+                        <br>
+                        <br>
+                        Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma de minhas explosões.
+                    </p>
 
+                    <footer>
+                        <div class="value">
+                            <p>Preço/hora</p>
+                            <strong>R$ 20,00</strong>
+                        </div>
+                        <a href="https://api.whatsapp.com/send?phone=5511012345678"><img src="./images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato</a>
+                    </footer>
 
-            <article>
-                <header>
-                    <img src="https://avatars2.githubusercontent.com/u/69776883?s=460&u=cce399541a47a5660a03087cdc524e3cd21a0203&v=4"
-                        alt="Photo profile">
-                    <div class="info-avatar">
-                        <strong>Gustavo Polonio</strong>
-                        <span>Química</span>
-                    </div>
-                </header>
+                </article>
 
-                <p class="text">Entusiasta das melhores tecnologias de química avançada. <br> <br> Apaixonado por
-                    explodir
-                    coisas
-                    em
-                    laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já
-                    passaram por uma de minhas explosões.
-                </p>
+            </main>
 
-                <footer>
-                    <div class="value">
-                        <p>Preço/hora</p>
-                        <strong>R$ 20,00</strong>
-                    </div>
-                    <a href="https://api.whatsapp.com/send?phone=5511012345678"><img src="/images/icons/whatsapp.svg"
-                            alt="Whatsapp">Entrar em contato</a>
-                </footer>
+        </div>
 
-
-            </article>
-
-
-        </main>
-
-    </div>
-
-</body>
+    </body>
 
 </html>
