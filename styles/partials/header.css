@@ -8,7 +8,7 @@
     justify-content: space-between;
 
     width: 90%;
-    margin: 0 auto; /* Divide igualmente as margens */
+    margin: 0 auto; 
     padding: 1rem 0 3rem;
 }
 
@@ -18,7 +18,6 @@
 
 #container .page-header .top-bar-container img {
     width: 7rem;
-    
 }
 
 #container .page-header .header-content {

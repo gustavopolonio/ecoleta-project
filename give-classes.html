@@ -1,150 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="stylesheet" href="./styles/partials/header.css">
-        <link rel="stylesheet" href="./styles/partials/page-give-classes.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/partials/header.css">
+    <link rel="stylesheet" href="./styles/partials/page-give-classes.css">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap">
 
-        <title>Proffy | Sua plataforma de estudos online</title>
+    <title>Proffy | Your online study platform</title>
 
-        <script src="./scripts/addField.js" defer="defer"></script>
-    </head>
+    <script src="./scripts/addField.js" defer="defer"></script>
+  </head>
 
-    <body id="page-give-classes">
-        <div id="container">
-            <header class="page-header">
-                <div class="top-bar-container">
-                    <a href="./"><img src="./images/icons/back.svg" alt="Back"></a>
-                    <p>Dar aulas</p>
-                    <img src="./images/logo.svg" alt="Proffy">
-                </div>
-
-                <div class="header-content">
-                    <h1>Que incrível que você quer dar aulas.</h1>
-                    <footer>
-                        <strong>O primeiro passo é preencher esse formulário de inscrição.</strong>
-                        <div class="footer-icon">
-                            <img src="./images/icons/rocket.svg" alt="Rocket">
-                            <span>Prepare-se!
-                                <br>
-                                Vai ser o máximo.</span>
-                        </div>
-                    </footer>
-                </div>
-
-            </header>
-
-            <main>
-                <form action="" id="create-class">
-                    <fieldset>
-                        <legend>Seus dados</legend>
-
-                        <div class="input-block">
-                            <label for="name">Nome completo</label>
-                            <input name="name" id="name" required="required">
-                        </div>
-
-                        <div class="input-block">
-                            <label for="avatar">Link da sua foto
-                                <span>(comece com //http)</span></label>
-                            <input type="url" name="avatar" id="avatar" required="required">
-                        </div>
-
-                        <div class="input-block">
-                            <label for="whatsapp">Whatsapp
-                                <span>(somente números)</span></label>
-                            <input type="number" name="whatsapp" id="whatsapp" required="required">
-                        </div>
-
-                        <div class="textarea-block">
-                            <label for="bio">Biografia
-                                <span>(máximo 300 caracteres)</span></label>
-                            <textarea name="bio" id="bio" required="required"></textarea>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Sobre a aula</legend>
-
-                        <div class="select-block">
-                            <label for="subject">Matéria</label>
-                            <select name="subject" id="subject" required="required">
-                                <option value="" hidden="">Selecione qual você quer ensinar</option>
-                                <option value="1">Artes</option>
-                                <option value="2">Biologia</option>
-                                <option value="3">Ciências</option>
-                                <option value="4">Educação física</option>
-                                <option value="5">Física</option>
-                                <option value="6">Geografia</option>
-                                <option value="7">História</option>
-                                <option value="8">Matemática</option>
-                                <option value="9">Português</option>
-                                <option value="10">Química</option>
-                            </select>
-                        </div>
-
-                        <div class="input-block">
-                            <label for="cost">Custo da sua hora por aula</label>
-                            <input type="number" name="cost" id="cost" required="required">
-                        </div>
-                    </fieldset>
-
-                    <fieldset id="schedule-items">
-                        <legend>Horários disponíveis
-                            <button type="button" id="add-time">+ Novo horário</button>
-                        </legend>
-
-                        <div class="schedule-item">
-                            <div class="select-block">
-                                <label for="weekday">Dia da semana</label>
-                                <select name="weekday[]" id="weekday">
-                                    <option value="" hidden="">Selecione uma opção</option>
-                                    <option value="0">Domingo</option>
-                                    <option value="1">Segunda</option>
-                                    <option value="2">Terça</option>
-                                    <option value="3">Quarta</option>
-                                    <option value="4">Quinta</option>
-                                    <option value="5">Sexta</option>
-                                    <option value="6">Sábado</option>
-                                </select>
-                            </div>
-
-                            <div class="input-block">
-                                <label for="time-to">Das</label>
-                                <input type="time" name="time-to[]" id="time-to">
-                            </div>
-
-                            <div class="input-block">
-                                <label for="time-from">Até</label>
-                                <input type="time" name="time-from[]" id="time-from">
-                            </div>
-                        </div>
-
-                    </fieldset>
-
-                </form>
-
-                <footer id="footer">
-                    <div class="footer-content">
-                        <div class="footer-icon">
-                            <img src="./images/icons/warning.svg" alt="Warning">
-                            <p>Importante!
-                                <br>
-                                Preencha todos os dados</p>
-                        </div>
-                        <button type="submit" form="create-class">Salvar cadastro</button>
-                    </div>
-                </footer>
-            </main>
-
+  <body id="page-give-classes">
+    <div id="container">
+      <header class="page-header">
+        <div class="top-bar-container">
+          <a href="./"><img src="./images/icons/back.svg" alt="Back"></a>
+          <p>Give classes</p>
+          <img src="./images/logo.svg" alt="Proffy">
         </div>
 
-    </body>
+        <div class="header-content">
+          <h1>How amazing you want to teach.</h1>
+          <footer>
+            <strong>The first step is to complete this application form.</strong>
+            <div class="footer-icon">
+              <img src="./images/icons/rocket.svg" alt="Rocket">
+              <span>
+                Get ready!
+                <br>
+                It will be great.
+              </span>
+            </div>
+          </footer>
+        </div>
+
+      </header>
+
+      <main>
+        <form action="" id="create-class">
+          <fieldset>
+            <legend>Your data</legend>
+
+            <div class="input-block">
+              <label for="name">Full name</label>
+              <input name="name" id="name" required="required">
+            </div>
+
+            <div class="input-block">
+              <label for="avatar">Avatar link
+                <span>(start with //http)</span>
+              </label>
+              <input type="url" name="avatar" id="avatar" required="required">
+            </div>
+
+            <div class="input-block">
+              <label for="whatsapp">Whatsapp
+                <span>(only numbers)</span>
+              </label>
+              <input type="number" name="whatsapp" id="whatsapp" required="required">
+            </div>
+
+            <div class="textarea-block">
+              <label for="bio">Biography
+                <span>(maximum 300 characters)</span>
+              </label>
+              <textarea name="bio" id="bio" required="required"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>About the class</legend>
+
+            <div class="select-block">
+              <label for="subject">Subject</label>
+              <select name="subject" id="subject" required="required">
+                <option value="" hidden="">Select which subject you want to teach</option>
+                <option value="1">Arts</option>
+                <option value="2">Biology</option>
+                <option value="3">Science</option>
+                <option value="4">Physical education</option>
+                <option value="5">Physics</option>
+                <option value="6">Geography</option>
+                <option value="7">History</option>
+                <option value="8">Math</option>
+                <option value="9">Portuguese</option>
+                <option value="10">Chemistry</option>
+              </select>
+            </div>
+
+            <div class="input-block">
+              <label for="cost">Cost your hour class</label>
+              <input type="number" name="cost" id="cost" required="required">
+            </div>
+          </fieldset>
+
+          <fieldset id="schedule-items">
+            <legend>
+                Available time
+                <button type="button" id="add-time">+ New time</button>
+            </legend>
+
+            <div class="schedule-item">
+              <div class="select-block">
+                <label for="weekday">Weekday</label>
+                <select name="weekday[]" id="weekday">
+                  <option value="" hidden="">Select one option</option>
+                  <option value="0">Sunday</option>
+                  <option value="1">Monday</option>
+                  <option value="2">Tuesday</option>
+                  <option value="3">Wedsneday</option>
+                  <option value="4">Thursday</option>
+                  <option value="5">Friday</option>
+                  <option value="6">Saturday</option>
+                </select>
+              </div>
+
+              <div class="input-block">
+                <label for="time-to">From</label>
+                <input type="time" name="time-to[]" id="time-to">
+              </div>
+
+              <div class="input-block">
+                <label for="time-from">To</label>
+                <input type="time" name="time-from[]" id="time-from">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <footer id="footer">
+          <div class="footer-content">
+            <div class="footer-icon">
+              <img src="./images/icons/warning.svg" alt="Warning">
+              <p>
+                Important!
+                <br>
+                Fill all data
+              </p>
+            </div>
+            <button type="submit" form="create-class">Save register</button>
+          </div>
+        </footer>
+      </main>
+
+    </div>
+
+  </body>
 
 </html>
